@@ -1,29 +1,52 @@
-# WebGradients
-A curated collection of splendid gradients made in `CSS3`, `.sketch` and `.PSD` formats. 
-[View all the gradients here »](https://webgradients.com)
+# @aiou/ts-lib-template
+> webpack loader starter
 
-[![N|Solid](https://itmeo.com/public/small_bar_powered_by_itmeo3.png)](https://itmeo.com)
+[![npm](https://img.shields.io/npm/v/@aiou/ts-lib-template?style=for-the-badge)](https://github.com/JiangWeixian/templates/tree/master/packages/core) [![GitHub](https://img.shields.io/github/license/jiangweixian/templates?style=for-the-badge)](https://github.com/JiangWeixian/templates/tree/master/packages/ts-lib-template)
 
+## Note
 
+- replace all `ts-lib-template` by real `{ webpack-loader-name }`
 
-## How To Use
-1. Download the file [`webgradients.css`](https://github.com/itmeo/webgradients/blob/master/webgradients.css).
-2. Place the file in your project folder.
-3. Link the file it in the `<head>` of your document.
+## Features
+
+- [typescript]()
+- [example]() - config in `/examples/basic-react/build/webpack.common.config.js`
+
+## Dev
+
+**Setup**
 
 ```
-<html>
-  <head>
-    <link href="webgradients.css" rel="stylesheet">
-  </head>
-  ...
+npm install
+npm run dev
 ```
 
-## Browser Compatibility
-Some gradients uses the `background-blend-mode` CSS property. It's supported by the majority of the modern browsers. 
-View full [compatibility list (view on Caniuse) »](http://caniuse.com/#search=background-blend-mode) 
+**Build**
 
-You can learn more about `background-blend-mode` [here (view on MDN) »](https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode) 
-## License
-WebGradients is created under the [MIT](http://opensource.org/licenses/MIT) license.
+```
+npm run build
+```
 
+## Q&A
+
+- the exec queue of webpack-loaders
+   
+   ```js
+   [
+     {
+       loader: 'loader-one'
+     },
+     {
+       loader: 'loader-two'
+     },
+   ]
+   ```
+
+   `loader-two` is before `loader-one`
+
+- how webpack-loader work
+  
+  webpack output resouce-file in string-format to webpack-loader
+
+- some suggestions
+  - `tsc` is better than `rollup`
