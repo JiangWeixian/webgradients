@@ -11,6 +11,9 @@
     "styled-components",
     "webgradients"
   ],
+  "files": [
+    "lib"
+  ],
   "watch": {
     "run_dev": {
       "patterns": [
@@ -23,19 +26,32 @@
       "runOnChangeOnly": false
     }
   },
+  "peerDependencies": {
+    "react": "*",
+    "styled-components": "*"
+  },
   "devDependencies": {
     "@types/jest": "24.0.18",
     "@types/lodash.isempty": "4.4.6",
+    "@types/styled-components": "^5.0.1",
+    "fs-extra": "8.1.0",
     "husky": "3.0.1",
     "jest": "24.9.0",
+    "lodash.camelcase": "4.3.0",
+    "mustache": "4.0.0",
     "np": "5.0.3",
     "npm-watch": "0.6.0",
     "prettier": "1.18.2",
     "pretty-quick": "1.11.1",
+    "react": "^16.13.0",
     "rimraf": "3.0.0",
+    "styled-components": "5.0.1",
     "ts-jest": "24.0.2",
     "ts-node": "8.1.0",
     "tslib": "1.9.3",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-plugin-prettier": "2.1.0",
+    "tslint-react": "4.2.0",
     "typescript": "3.4.5"
   },
   "dependencies": {
@@ -45,6 +61,7 @@
   "author": "JW",
   "license": "MIT",
   "scripts": {
+    "prebuild": "node ./scripts/pre-build.js",
     "build": "rimraf lib && tsc",
     "run_dev": "rimraf lib && tsc",
     "dev": "npm-watch run_dev",
