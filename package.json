@@ -1,6 +1,6 @@
 {
   "name": "styled-webgradients",
-  "version": "0.0.1",
+  "version": "1.0.0-0",
   "description": "styled-components version for webgradients",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
