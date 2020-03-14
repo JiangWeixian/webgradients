@@ -61,7 +61,8 @@
   "author": "JW",
   "license": "MIT",
   "scripts": {
-    "prebuild": "node ./scripts/pre-build.js",
+    "prebuild": "node ./scripts/pre-build.js && npm run prettier",
+    "prettier": "prettier --config .prettierrc --write 'src/**/*'",
     "build": "rimraf lib && tsc",
     "run_dev": "rimraf lib && tsc",
     "dev": "npm-watch run_dev",
