@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled, { keyframes, css } from 'styled-components'
 
 const animated = keyframes`
   0% {
@@ -13,19 +13,27 @@ const animated = keyframes`
   }
 `
 
+const animation = (props: { animated?: boolean }) =>
+  props.animated
+    ? css`
+        ${animated} 30s ease infinite
+      `
+    : undefined
+
 const StyledNearMoon = styled.div`
-  background-image: linear-gradient(0deg, #5ee7df 0% #b490ca 100%);
+  background-image: linear-gradient(0deg, #5ee7df 0%, #b490ca 100%);
   margin: 0px;
   padding: 0px;
   background-position: 0 0;
   background-size: ${(props: { animated?: boolean }) => (props.animated ? '400%' : 'auto')};
-  animation: ${(props: { animated?: boolean }) =>
-    props.animated ? `${animated} 30s ease infinite` : undefined};
+  animation: ${animation};
 `
 
 export const NearMoon = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
+    animated?: boolean
+  }
 >((props, ref) => {
   return <StyledNearMoon {...props} ref={ref} />
 })

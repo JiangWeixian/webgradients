@@ -15,7 +15,7 @@ gradients.forEach(v => {
     styledname: `Styled${name}`,
     name,
     deg: `${v.deg}deg`,
-    colors: v.gradient.map(g => `${g.color} ${g.pos}%`).join(' '),
+    colors: v.gradient.map(g => `${g.color} ${g.pos}%`).join(', '),
   })
   fs.outputFileSync(path.resolve(__dirname, `../src/webgradients/${name}.tsx`), result)
 })
@@ -29,4 +29,4 @@ const result = mustache.render(entryTpl.toString(), {
   exports: all,
 })
 
-fs.outputFileSync(path.resolve(__dirname, `../src/indes.ts`), result)
+fs.outputFileSync(path.resolve(__dirname, `../src/index.ts`), result)
