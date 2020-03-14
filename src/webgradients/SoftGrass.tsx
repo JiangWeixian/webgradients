@@ -31,9 +31,7 @@ const StyledSoftGrass = styled.div`
 
 export const SoftGrass = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledSoftGrass {...props} ref={ref} />
 })

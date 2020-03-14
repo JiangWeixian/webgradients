@@ -31,9 +31,7 @@ const StyledTemptingAzure = styled.div`
 
 export const TemptingAzure = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledTemptingAzure {...props} ref={ref} />
 })

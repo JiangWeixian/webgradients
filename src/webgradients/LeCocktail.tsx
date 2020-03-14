@@ -31,9 +31,7 @@ const StyledLeCocktail = styled.div`
 
 export const LeCocktail = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledLeCocktail {...props} ref={ref} />
 })

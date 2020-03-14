@@ -31,9 +31,7 @@ const StyledTrueSunset = styled.div`
 
 export const TrueSunset = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledTrueSunset {...props} ref={ref} />
 })

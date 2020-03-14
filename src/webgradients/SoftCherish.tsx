@@ -41,9 +41,7 @@ const StyledSoftCherish = styled.div`
 
 export const SoftCherish = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledSoftCherish {...props} ref={ref} />
 })

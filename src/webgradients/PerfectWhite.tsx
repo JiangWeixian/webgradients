@@ -31,9 +31,7 @@ const StyledPerfectWhite = styled.div`
 
 export const PerfectWhite = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledPerfectWhite {...props} ref={ref} />
 })

@@ -31,9 +31,7 @@ const StyledMagicLake = styled.div`
 
 export const MagicLake = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledMagicLake {...props} ref={ref} />
 })

@@ -39,9 +39,7 @@ const StyledOldHat = styled.div`
 
 export const OldHat = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledOldHat {...props} ref={ref} />
 })

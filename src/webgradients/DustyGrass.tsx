@@ -31,9 +31,7 @@ const StyledDustyGrass = styled.div`
 
 export const DustyGrass = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledDustyGrass {...props} ref={ref} />
 })

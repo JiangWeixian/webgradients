@@ -31,9 +31,7 @@ const StyledGagarinView = styled.div`
 
 export const GagarinView = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledGagarinView {...props} ref={ref} />
 })

@@ -24,7 +24,7 @@ const {{ styledname }} = styled.div`
   animation: ${animation};
 `
 
-export const {{ name }} = React.forwardRef<HTMLDivElement, React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & { animated?: boolean }>((props, ref) => {
+export const {{ name }} = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }>((props, ref) => {
   return (
     <{{ styledname }} {...props} ref={ref} />
   )

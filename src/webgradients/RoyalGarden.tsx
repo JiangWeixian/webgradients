@@ -31,9 +31,7 @@ const StyledRoyalGarden = styled.div`
 
 export const RoyalGarden = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledRoyalGarden {...props} ref={ref} />
 })

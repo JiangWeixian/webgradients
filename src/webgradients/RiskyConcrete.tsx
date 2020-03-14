@@ -31,9 +31,7 @@ const StyledRiskyConcrete = styled.div`
 
 export const RiskyConcrete = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledRiskyConcrete {...props} ref={ref} />
 })

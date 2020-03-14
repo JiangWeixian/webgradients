@@ -31,9 +31,7 @@ const StyledFrozenBerry = styled.div`
 
 export const FrozenBerry = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledFrozenBerry {...props} ref={ref} />
 })

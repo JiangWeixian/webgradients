@@ -31,9 +31,7 @@ const StyledRaccoonBack = styled.div`
 
 export const RaccoonBack = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledRaccoonBack {...props} ref={ref} />
 })

@@ -31,9 +31,7 @@ const StyledGreatWhale = styled.div`
 
 export const GreatWhale = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledGreatWhale {...props} ref={ref} />
 })

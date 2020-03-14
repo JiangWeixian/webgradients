@@ -31,9 +31,7 @@ const StyledPerfectBlue = styled.div`
 
 export const PerfectBlue = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledPerfectBlue {...props} ref={ref} />
 })

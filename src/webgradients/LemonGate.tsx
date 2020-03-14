@@ -31,9 +31,7 @@ const StyledLemonGate = styled.div`
 
 export const LemonGate = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledLemonGate {...props} ref={ref} />
 })

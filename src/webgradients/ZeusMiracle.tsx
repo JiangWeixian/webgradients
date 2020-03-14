@@ -31,9 +31,7 @@ const StyledZeusMiracle = styled.div`
 
 export const ZeusMiracle = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledZeusMiracle {...props} ref={ref} />
 })

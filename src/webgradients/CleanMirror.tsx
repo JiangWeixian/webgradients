@@ -31,9 +31,7 @@ const StyledCleanMirror = styled.div`
 
 export const CleanMirror = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledCleanMirror {...props} ref={ref} />
 })

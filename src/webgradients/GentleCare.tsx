@@ -31,9 +31,7 @@ const StyledGentleCare = styled.div`
 
 export const GentleCare = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledGentleCare {...props} ref={ref} />
 })

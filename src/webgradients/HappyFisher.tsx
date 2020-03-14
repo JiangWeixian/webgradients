@@ -31,9 +31,7 @@ const StyledHappyFisher = styled.div`
 
 export const HappyFisher = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledHappyFisher {...props} ref={ref} />
 })

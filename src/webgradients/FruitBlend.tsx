@@ -31,9 +31,7 @@ const StyledFruitBlend = styled.div`
 
 export const FruitBlend = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledFruitBlend {...props} ref={ref} />
 })

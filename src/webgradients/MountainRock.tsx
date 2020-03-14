@@ -31,9 +31,7 @@ const StyledMountainRock = styled.div`
 
 export const MountainRock = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledMountainRock {...props} ref={ref} />
 })

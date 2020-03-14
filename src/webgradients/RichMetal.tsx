@@ -31,9 +31,7 @@ const StyledRichMetal = styled.div`
 
 export const RichMetal = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledRichMetal {...props} ref={ref} />
 })

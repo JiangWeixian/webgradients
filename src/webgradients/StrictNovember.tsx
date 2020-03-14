@@ -31,9 +31,7 @@ const StyledStrictNovember = styled.div`
 
 export const StrictNovember = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledStrictNovember {...props} ref={ref} />
 })

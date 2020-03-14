@@ -31,9 +31,7 @@ const StyledMillenniumPine = styled.div`
 
 export const MillenniumPine = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledMillenniumPine {...props} ref={ref} />
 })

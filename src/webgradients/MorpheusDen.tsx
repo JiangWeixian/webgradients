@@ -31,9 +31,7 @@ const StyledMorpheusDen = styled.div`
 
 export const MorpheusDen = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledMorpheusDen {...props} ref={ref} />
 })

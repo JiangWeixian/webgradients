@@ -31,9 +31,7 @@ const StyledMindCrawl = styled.div`
 
 export const MindCrawl = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledMindCrawl {...props} ref={ref} />
 })

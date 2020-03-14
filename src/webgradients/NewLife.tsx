@@ -31,9 +31,7 @@ const StyledNewLife = styled.div`
 
 export const NewLife = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledNewLife {...props} ref={ref} />
 })

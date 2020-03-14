@@ -31,9 +31,7 @@ const StyledBigMango = styled.div`
 
 export const BigMango = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledBigMango {...props} ref={ref} />
 })

@@ -31,9 +31,7 @@ const StyledColorfulPeach = styled.div`
 
 export const ColorfulPeach = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledColorfulPeach {...props} ref={ref} />
 })

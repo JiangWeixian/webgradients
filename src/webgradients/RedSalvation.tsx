@@ -31,9 +31,7 @@ const StyledRedSalvation = styled.div`
 
 export const RedSalvation = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledRedSalvation {...props} ref={ref} />
 })

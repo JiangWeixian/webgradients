@@ -39,9 +39,7 @@ const StyledYoungPassion = styled.div`
 
 export const YoungPassion = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledYoungPassion {...props} ref={ref} />
 })

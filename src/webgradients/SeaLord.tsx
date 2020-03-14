@@ -31,9 +31,7 @@ const StyledSeaLord = styled.div`
 
 export const SeaLord = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledSeaLord {...props} ref={ref} />
 })

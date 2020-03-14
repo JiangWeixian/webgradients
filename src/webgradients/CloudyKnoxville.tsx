@@ -31,9 +31,7 @@ const StyledCloudyKnoxville = styled.div`
 
 export const CloudyKnoxville = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledCloudyKnoxville {...props} ref={ref} />
 })

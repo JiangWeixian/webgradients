@@ -31,9 +31,7 @@ const StyledSleeplessNight = styled.div`
 
 export const SleeplessNight = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledSleeplessNight {...props} ref={ref} />
 })

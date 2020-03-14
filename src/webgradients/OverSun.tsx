@@ -31,9 +31,7 @@ const StyledOverSun = styled.div`
 
 export const OverSun = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledOverSun {...props} ref={ref} />
 })

@@ -31,9 +31,7 @@ const StyledHappyMemories = styled.div`
 
 export const HappyMemories = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledHappyMemories {...props} ref={ref} />
 })

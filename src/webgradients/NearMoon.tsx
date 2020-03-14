@@ -31,9 +31,7 @@ const StyledNearMoon = styled.div`
 
 export const NearMoon = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledNearMoon {...props} ref={ref} />
 })

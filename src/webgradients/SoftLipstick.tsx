@@ -31,9 +31,7 @@ const StyledSoftLipstick = styled.div`
 
 export const SoftLipstick = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledSoftLipstick {...props} ref={ref} />
 })

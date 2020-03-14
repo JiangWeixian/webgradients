@@ -31,9 +31,7 @@ const StyledSolidStone = styled.div`
 
 export const SolidStone = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledSolidStone {...props} ref={ref} />
 })

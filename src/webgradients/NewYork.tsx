@@ -31,9 +31,7 @@ const StyledNewYork = styled.div`
 
 export const NewYork = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledNewYork {...props} ref={ref} />
 })

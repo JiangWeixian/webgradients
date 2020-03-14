@@ -31,9 +31,7 @@ const StyledMoleHall = styled.div`
 
 export const MoleHall = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledMoleHall {...props} ref={ref} />
 })

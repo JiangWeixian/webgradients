@@ -31,9 +31,7 @@ const StyledFreshOasis = styled.div`
 
 export const FreshOasis = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledFreshOasis {...props} ref={ref} />
 })

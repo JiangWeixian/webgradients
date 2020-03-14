@@ -31,9 +31,7 @@ const StyledBlessing = styled.div`
 
 export const Blessing = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledBlessing {...props} ref={ref} />
 })

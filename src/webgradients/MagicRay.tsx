@@ -31,9 +31,7 @@ const StyledMagicRay = styled.div`
 
 export const MagicRay = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledMagicRay {...props} ref={ref} />
 })

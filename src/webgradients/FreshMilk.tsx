@@ -31,9 +31,7 @@ const StyledFreshMilk = styled.div`
 
 export const FreshMilk = React.forwardRef<
   HTMLDivElement,
-  React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    animated?: boolean
-  }
+  React.HTMLAttributes<HTMLDivElement> & { animated?: boolean }
 >((props, ref) => {
   return <StyledFreshMilk {...props} ref={ref} />
 })
