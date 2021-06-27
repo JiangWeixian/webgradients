@@ -63,9 +63,9 @@
   "license": "MIT",
   "scripts": {
     "copy": "copyfiles gradients.json lib",
-    "prebuild": "node ./scripts/pre-build.js && npm run prettier && copyfiles gradients.json lib",
+    "prebuild": "node ./scripts/pre-build.js && npm run prettier",
     "prettier": "prettier --config .prettierrc --write 'src/**/*'",
-    "build": "rimraf lib && tsc",
+    "build": "rimraf lib && tsc && copyfiles gradients.json lib",
     "run_dev": "rimraf lib && tsc",
     "dev": "npm-watch run_dev",
     "test": "jest",
